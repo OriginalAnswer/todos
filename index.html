@@ -9,27 +9,39 @@
 </head>
 <body>
     <header>
-            <div class="h-m">12</div>
+            <div class="h-m"><span>12</span></div>
             <div class="h-y">2022</div>
             <div class="btn-caln"></div>
     </header>
     <main>
         <nav>
-            <div class="mdw-btn">m</div>
-            <div class="mdw-btn">d</div>
-            <div class="mdw-btn">w</div>
+            <div class="btn-mdw" id="btn-m">m</div>
+            <div class="btn-mdw" id="btn-d">d</div>
+            <div class="btn-mdw" id="btn-w">w</div>
         </nav>
-        <article>
-            <section class="pvs" id="m">
-
-            </section>
-            <section class="pvs" id="d">
-
-            </section>
-            <section class="pvs" id="w">
-
-            </section>
+        <article id="slider">
+            <div class="pv" id="pvm">
+                    이번달 계획 뭐냐
+            </div>
+<!-- ------------------------------------------- -->
+<div class="pv" id="pvd">
+    <div class="tools">
+        <button class="edit">edit</button>
+        <button class="delete">delete</button>
+    </div>
+    <textarea></textarea>
+    <button class="add">add</button>
+</div>
+<!-- ------------------------------------------- -->
+            <div class="pv" id="pvw">
+                이번주 계획 뭐냐
+            </div>
         </article>
     </main>
+
+    <!--  -->
+    <script src="/js/const.js"></script>
+    <script src="/js/today.js"></script>
+    <script src="/js/slider.js"></script>
 </body>
 </html>
