@@ -55,8 +55,9 @@ header{
 /*  */
 main{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: block;
+    overflow: hidden;
 }
 /*  */
 nav{
@@ -81,6 +82,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(245, 245, 245);
     /* color: #fff; */
     /* border-radius: 18px; */
 }
@@ -97,8 +99,6 @@ nav{
 /*  */
 #slider{
     position: relative;
-    overflow-x: hidden;
-    /* background-color: tomato; */
 }
 .pv{
     position: absolute;
