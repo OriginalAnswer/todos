@@ -101,8 +101,8 @@ nav{
 .pv{
     position: absolute;
     width: 100%;
-    height: 100%;
-    /* padding: 1em .5em .8em .5em; */
+    /* height: 100%; */
+    overflow: scroll;
     font-family: 'Gauon Dodum', 'Jua';
 }
 .pv input{
@@ -137,14 +137,11 @@ nav{
 }
 
 #pvm{
-    background-color: #a4c0e9;
     transform: translateX(-100%);
 }
 #pvd{
-    background-color: #e9aab941;
 }
 #pvw{
-    background-color: #69bda4;
     transform: translateX(+100%);
 }
 /*  */
