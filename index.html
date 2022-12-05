@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&Bodoni+Moda&Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
     <title>todo for me</title>
     <!-- 클라이언트 데이터베이스 사용 -->
 </head>
@@ -12,7 +14,7 @@
 <header>
     <div class="h-m"><span>12</span></div>
     <div class="h-y">2022</div>
-    <div class="btn-caln"></div>
+    <!-- <div class="btn-caln"></div> -->
 </header>
 <main>
     <nav>
@@ -20,23 +22,34 @@
         <div class="btn-mdw" id="btn-d">d</div>
         <div class="btn-mdw" id="btn-w">w</div>
     </nav>
-    <article id="slider">
+    <section id="slider">
         <div class="pv" id="pvm">
-                <textarea></textarea>
+            <form id="m-form">
+                <input id="m-input" type="text" placeholder="+" required>
+            </form>
+            <div id="m-todos">
+                <div id="m-list"></div>
+            </div>
         </div>
 <!-- ------------------------------------------- -->
         <div class="pv" id="pvd">
-            <button id="add">add</button>
-            <div class="tools">
-                <button class="edit">edit</button>
+            <form id="d-form">
+                <input id="d-input" type="text" placeholder="+" required>
+            </form>
+            <div id="d-todos">
+                <div id="d-list"></div>
             </div>
-            <textarea></textarea>
         </div>
     <!-- ------------------------------------------- -->
         <div class="pv" id="pvw">
-        <textarea></textarea>
+            <form id="w-form">
+                <input id="w-input" type="text" placeholder="+" required>
+            </form>
+            <div id="w-todos">
+                <div id="w-list"></div>
+            </div>
         </div>
-    </article>
+    </section>
 </main>
 
     <!--  -->

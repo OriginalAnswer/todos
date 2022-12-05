@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif,'Bodoni Moda', 'Gauon Dodum', 'Jua','Forum', serif;
+    font-family: 'Bodoni Moda', 'Gauon Dodum', 'Jua','Forum', sans-serif,serif;
     /* border: #000 1px solid; */
 }
 input,
@@ -20,7 +20,7 @@ button{
 }
 html{
     width: 100vw;height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 body{
     display: block;
@@ -95,28 +95,17 @@ nav{
 
 /*  */
 #slider{
-    width: 100%;
-    height: 100%;
+    position: relative;
+    /* background-color: tomato; */
 }
-
 .pv{
     position: absolute;
     width: 100%;
     height: 100%;
-
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-    justify-content: center;
-    padding: auto;
-    margin: auto;
+    /* padding: 1em .5em .8em .5em; */
+    font-family: 'Gauon Dodum', 'Jua';
 }
-.tools{
-    display: flex;
-    background-color: #9ec862;
-    justify-content: flex-end;
-}
-.pv textarea{
+.pv input{
     border: none;
     font-size: 1.2rem;
     width: 100%;
@@ -124,8 +113,23 @@ nav{
     padding: 28px;
     outline: none;
     resize: none;
+    text-align: center;
     /* overflow-y: scroll; */
 }
+.pv input::placeholder{
+    font-size: 1.5em;
+    text-align: center;
+}
+.pv :is(div, div>div){
+    width: 100%;
+}
+.pv div>div>div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px 1rem;
+}
+
 #pvm{
     background-color: #a4c0e9;
     transform: translateX(-100%);
@@ -136,4 +140,44 @@ nav{
 #pvw{
     background-color: #69bda4;
     transform: translateX(+100%);
+}
+/*  */
+
+#todo-form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5em;
+    border-bottom: 2px solid #000;
+    margin-bottom: .5em;
+}
+#todo-input{
+    width: 100%;
+    font-size: 1.2em;
+    font-family: 'Gauon Dodum', 'Jua';
+}
+
+#btn-todo-save,
+.delete-btn{
+    cursor: pointer;
+}
+#todo-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: .8em 0;
+}
+#todo-list div{
+    width: 100%;
+    margin-bottom: 1em;
+    padding: .35em 1.4em .35em 1.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid #000;
+    font-size: 1.3em;
 }
