@@ -24,7 +24,7 @@ html{
 }
 body{
     display: block;
-    width: 100%;height: 100%;
+    width: 100%;height: 100vh;
     text-align: center;
 }
 /*  */
@@ -55,8 +55,8 @@ header{
 /*  */
 main{
     width: 100%;
-    height: 100%;
-    display: block
+    height: 100vh;
+    display: block;
 }
 /*  */
 nav{
@@ -68,8 +68,8 @@ nav{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    border-top: #000 dashed 4px;
-    border-bottom: #000 dashed 4px;
+    /* border-top: #000 solid 1px; */
+    border-bottom: #000 solid 2px;
     /* border-radius: 18px; */
 }
 .btn-mdw{
@@ -85,8 +85,8 @@ nav{
     /* border-radius: 18px; */
 }
 #btn-d{
-    border-left: 4px dashed #000;
-    border-right: 4px dashed #000;
+    border-left: 1px solid rgb(139, 139, 139);
+    border-right: 1px solid rgb(139, 139, 139);
 }
 /* #btn-m{background-color: #bc21bf;}
 #btn-d{background-color: #0180ff;}
@@ -102,11 +102,12 @@ nav{
 .pv{
     position: absolute;
     width: 100%;
+    height: 100%;
     display: flex;
     /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
-    padding: 0 10px 28px 10px;
+    /* padding: 0 10px 28px 10px; */
 }
 .tools{
     display: flex;
@@ -116,15 +117,15 @@ nav{
 .pv textarea{
     border: none;
     font-size: 1.2rem;
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 #pvm{
     background-color: #a4c0e9;
     transform: translateX(-100%);
 }
 #pvd{
-    background-color: #e9aab9;
+    background-color: #e9aab941;
 }
 #pvw{
     background-color: #69bda4;
