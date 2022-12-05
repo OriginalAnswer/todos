@@ -97,6 +97,7 @@ nav{
 /*  */
 #slider{
     position: relative;
+    overflow-x: hidden;
     /* background-color: tomato; */
 }
 .pv{
