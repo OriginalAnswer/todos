@@ -103,11 +103,13 @@ nav{
     position: absolute;
     width: 100%;
     height: 100%;
+
     display: flex;
     /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
-    /* padding: 0 10px 28px 10px; */
+    padding: auto;
+    margin: auto;
 }
 .tools{
     display: flex;
@@ -119,6 +121,10 @@ nav{
     font-size: 1.2rem;
     width: 100%;
     height: 100%;
+    padding: 28px;
+    outline: none;
+    resize: none;
+    /* overflow-y: scroll; */
 }
 #pvm{
     background-color: #a4c0e9;
