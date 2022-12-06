@@ -97,6 +97,7 @@ nav{
 /*  */
 #slider{
     position: relative;
+    transition: transform .2s ease-out;
 }
 .pv{
     position: absolute;
